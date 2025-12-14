@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.doctor-container {
+  display: flex;
+  min-height: calc(100vh - 72px);
+  background: #020617;
+}
+
+.doctor-sidebar {
+  width: 220px;
+  background: #0f172a;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.doctor-sidebar h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.doctor-link {
+  text-decoration: none;
+  color: #cbd5f5;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.doctor-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.doctor-main {
+  flex: 1;
+  padding: 32px;
+  color: white;
+}
+/* LIGHT MODE */
+body[data-theme="light"] {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* DARK MODE */
+body[data-theme="dark"] {
+  background: #020617;
+  color: white;
+}
+
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
